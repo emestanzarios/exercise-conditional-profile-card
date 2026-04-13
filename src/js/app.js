@@ -37,7 +37,11 @@ function render(variables = {}) {
     "Apellido"}</h1>
           <h2>${variables.role || "Selecciona tu posición"}</h2>
           <h3>${variables.city || "Ciudad"}, ${variables.country || "Pais"}</h3>
-          <ul class="position-right">
+          <ul class="${
+            variables.socialMediaPosition === "position-left"
+              ? "position-left"
+              : "position-right"
+          }">
             <li><a href="${
               variables.twitter
                 ? "https://twitter.com/$" + variables.twwiter
