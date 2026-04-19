@@ -44,19 +44,19 @@ function render(variables = {}) {
           }">
             <li><a href="${
               variables.twitter
-                ? "https://twitter.com/$" + variables.twwiter
+                ? "https://twitter.com/" + variables.twiter
                 : "#"
             }"><i class="fab fa-twitter"></i></a></li>
             
               <li><a href="${
                 variables.github
-                  ? "https://github.com/$" + variables.github
+                  ? "https://github.com/" + variables.github
                   : "#"
               }"><i class="fab fa-github"></i></a></li>
             
             <li><a href="${
               variables.linkedin
-                ? "https://linkedin.com/school/$" + variables.linkedin
+                ? "https://linkedin.com/in/" + variables.linkedin
                 : "#"
             }"><i class="fab fa-linkedin"></i></a></li>
             
@@ -83,7 +83,7 @@ window.onload = function() {
     // this is the url for the profile avatar
     avatarURL: "https://randomuser.me/api/portraits/women/42.jpg",
     // social media bar position (position-left or position-right)
-    socialMediaPosition: "position-right",
+    socialMediaPosition: "position-left",
     // social media usernames
     twitter: null,
     github: null,
